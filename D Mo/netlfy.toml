@@ -1,3 +1,6 @@
+# netlify.toml
 [build]
-  publish   = "."    # tudo na raiz
-  functions = "."    # functions também na raiz
+  # se não tiver build, basta deixar command vazio:
+  command = ""
+  # publica a raiz do repo
+  publish = "."
