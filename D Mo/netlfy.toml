@@ -1,0 +1,3 @@
+[build]
+  publish   = "."    # tudo na raiz
+  functions = "."    # functions também na raiz

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PIX Gerado</title>
+  <!-- Seu CSS existente -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(
+    window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js'
+  );
+  fbq('init', '790650003535271');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=790650003535271&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=790650003535271&ev=PageView&noscript=1"/>
+  </noscript>
+      <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path fill='%2324CA68' fill-rule='evenodd' d='M6.253 0h30.494a6.27 6.27 0 0 1 4.417 1.839A6.28 6.28 0 0 1 43 6.26V28.96q.001.148-.005.29V40l-8.12-4.775H6.253a6.27 6.27 0 0 1-4.416-1.84A6.28 6.28 0 0 1 0 28.964V6.263a6.28 6.28 0 0 1 1.837-4.421A6.27 6.27 0 0 1 6.253.002zm15.484 21.578q-.348 0-.692.046L15.3 11.647a3.97 3.97 0 0 0-2.732-5.986 3.956 3.956 0 0 0-4.246 2.262 3.97 3.97 0 0 0 1.065 4.697c.668.557 1.5.879 2.368.916l5.85 10.146a5.116 5.116 0 0 0 4.113 8.111 5.1 5.1 0 0 0 4.555-2.756 5.12 5.12 0 0 0-.368-5.317l5.87-10.178a3.96 3.96 0 0 0 3.692-3.085 3.97 3.97 0 0 0-2.003-4.376 3.955 3.955 0 0 0-4.744.784 3.97 3.97 0 0 0-.49 4.79l-5.754 9.976a5 5 0 0 0-.736-.058z' clip-rule='evenodd'/></svg>">
+
+  <style>
+    /* Reset rápido */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+    .card {
+      background: #fff;
+      max-width: 360px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 2rem;
+      text-align: center;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 120px;
+      height: auto;
+    }
+    .card h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #24ca68;
+    }
+    .card p.subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+    .qr-container {
+      background: #fafafa;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+    .qr-container img {
+      display: block;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    .pix-code {
+      font-family: monospace;
+      background: #f0f0f0;
+      border: none;
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      word-break: break-all;
+    }
+    .btn-copy {
+      display: inline-block;
+      background: #24ca68;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-copy:hover {
+      background: #1fa85a;
+    }
+    .link-back {
+      display: block;
+      margin-top: 1.5rem;
+      color: #888;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .link-back:hover {
+      color: #555;
+    }
+    .how-to {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+.how-to h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #24ca68;
+}
+.how-to ol {
+  padding-left: 1.2rem;
+  color: #444;
+}
+.how-to li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.timer-container {
+  background: #f0fef7;
+  border: 1px solid #24ca68;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.timer-display {
+  color: #24ca68;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+  .timer-container {
+    padding: 0.5rem;
+  }
+  .timer-display {
+    font-size: 1rem;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="card">
+     <div class="timer-container">
+    <div class="timer-display">
+      Expira em <span id="timer">15:00</span>
+    </div>
+  </div>
+  <!-- ============================================ -->
+    <img src="vakinhalogo.png" alt="Vakinha" class="logo" />
+    <h1>Pagamento via PIX</h1>
+    <p class="subtitle">Escaneie o QR Code ou copie o código abaixo:</p>
+
+    <div class="qr-container">
+      <img id="qrImg" alt="QR Code PIX" src="" />
+    </div>
+
+    <textarea id="pixCode" class="pix-code" readonly></textarea>
+    <button id="copyBtn" class="btn-copy">Copiar código</button>
+    <div
+  id="copyFeedback"
+  style="
+    display: none;
+    margin-top: 0.5rem;
+    color: #24ca68;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+  "
+>
+  Código copiado!
+</div>
+<!-- Passo a passo PIX -->
+<div class="how-to">
+  <h2>Como pagar com o código PIX:</h2>
+  <ol>
+    <li>Clique no botão acima para <strong>copiar o código</strong>.</li>
+    <li>Abra o <strong>aplicativo do seu banco</strong>.</li>
+    <li>Vá na opção <strong>PIX</strong>, cole o código e confirme o pagamento.</li>
+  </ol>
+</div>
+
+
+    <a href="contribua.html" class="link-back">&larr; Voltar para doação</a>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const qrImageBase64    = localStorage.getItem('pixQrCodeImage');
+    const pixCopyPasteCode = localStorage.getItem('pixCopyPasteCode');
+    const donationValue    = parseFloat(localStorage.getItem('pixValue')) || 0;
+    const qrImgElement     = document.getElementById('qrImg');
+    const pixCodeTextarea  = document.getElementById('pixCode');
+    const copyButton       = document.getElementById('copyBtn');
+
+    if (!qrImageBase64 || !pixCopyPasteCode) {
+      document.body.innerHTML = `
+        <div class="card">
+          <img src="vakinhalogo.png" alt="Vakinha" class="logo" />
+          <h1>Erro ao gerar PIX</h1>
+          <p class="subtitle">Não foi possível carregar os dados do PIX. Por favor, <a href="contribua.html">tente novamente</a>.</p>
+        </div>
+      `;
+      return;
+    }
+
+    qrImgElement.src = qrImageBase64;
+    pixCodeTextarea.value = pixCopyPasteCode;
+
+    copyButton.addEventListener('click', () => {
+      pixCodeTextarea.select();
+      pixCodeTextarea.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(pixCopyPasteCode)
+        .then(() => {
+      const fb = document.getElementById('copyFeedback');
+      fb.textContent = 'Código copiado!';  // se quiser, personalize o texto
+      fb.style.display = 'block';         // mostra a mensagem
+      setTimeout(() => fb.style.display = 'none', 2000); // esconde após 2s
+    })
+    .catch(() => {
+      const fb = document.getElementById('copyFeedback');
+      fb.textContent = 'Erro ao copiar. Copie manualmente.';
+      fb.style.display = 'block';
+      setTimeout(() => fb.style.display = 'none', 3000);
+    });
+      });
+
+    // 🔥 Disparar o pixel de compra
+    fbq('track', 'Purchase', {
+      value: donationValue,
+      currency: 'BRL'
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // → O resto do seu código de qrImgElement, pixCodeTextarea, copyButton, fbq...
+
+    // ==== INÍCIO DO SCRIPT DO TIMER ====
+    const TOTAL_SECONDS = 15 * 60; // 15 minutos
+    let remaining = TOTAL_SECONDS;
+    const timerEl = document.getElementById('timer');
+    const interval = setInterval(() => {
+      const m = Math.floor(remaining / 60);
+      const s = remaining % 60;
+      timerEl.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      if (remaining === 0) {
+        clearInterval(interval);
+        // opcional: desabilitar copiar após expirar
+        document.getElementById('copyBtn').setAttribute('disabled','');
+        document.getElementById('copyBtn').style.cursor = 'not-allowed';
+        document.getElementById('expiryNotice').textContent =
+          'Código expirado. Por favor, gere um novo PIX.';
+      }
+      remaining--;
+    }, 1000);
+    // ==== FIM DO SCRIPT DO TIMER ====
+  });
+</script>
+
+
+</body>
+</html>
